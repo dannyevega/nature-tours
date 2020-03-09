@@ -1,0 +1,49 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+div[class^='col'] {
+  background-color: seagreen;
+  border-radius: 10px;
+  float: left;
+  height: 60px;
+}
+
+div[class^='col']:not(:last-child) {
+  margin-right: 60px;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 60px) / 2);
+}
+
+.col-1-of-3 {
+  width: calc((100% - (2 * 60px)) / 3);
+}
+
+.col-2-of-3 {
+  width: calc(2 * ((100% - (2 * 60px)) / 3) + 60px);
+}
+
+.col-1-of-4 {
+  width: calc((100% - (3 * 60px)) / 4);
+}
+
+.col-2-of-4 {
+  width: calc(2 * ((100% - (3 * 60px)) / 4) + 60px);
+}
+
+.col-3-of-4 {
+  width: calc(3 * ((100% - (3 * 60px)) / 4) + 120px);
+}
