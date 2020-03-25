@@ -28,6 +28,11 @@
     background-color: $color-white;
     color: $color-gray;
   }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
   
   &--animated {
     animation: moveInButton 1.5s ease-out .75s;
